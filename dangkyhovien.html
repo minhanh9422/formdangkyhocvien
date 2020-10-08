@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ĐĂNG KÝ HỌC VIÊN</title>
 <style type="text/css">
-body{ margin: 1cm; border: thin; height: 20cm; background-color: bisque; width: 10cm;}
+table{ margin: 1cm; border: thin; background-color: rgb(250, 216, 103); width: 10cm; line-height: 20px;}
 p{color:darkblue;}
+th{text-align: left; background-color: darkcyan; color: darkblue;}
 </style>
 </head>
 <body>
-<div><h2>ĐĂNG KÝ HỌC VIÊN</h2></div>
 <form action="dangky" >
 <table>
+<tr><th colspan="2">ĐĂNG KÝ HỌC VIÊN</th></tr>
 <tr><td>Họ và tên</td><td><input type="text" name="name" value="" width="4cm"></td></tr>
 <tr><td> Ngày sinh</td><td><input type="text" name="birth" value="" width="2cm"></td></tr>
-<tr><td> Giới tính </td><td><input type="radio" name="gt">Nam</td><input type="radio" name="gt">Nữ</td></tr>
+<tr><td> Giới tính </td><td><input type="radio" name="gt">Nam<input type="radio" name="gt">Nữ</td></tr>
 <tr><td>Địa chỉ<td><input type="text" width="4cm" height="3cm"></td></tr>
 <tr><td>Lớp<tD><input type="range" name="class" value="-Chọn lớp-"></td></tr>
 <tr><td>Email<td><input type="email" name="email" value="" width="3.5cm"></td></tr>
