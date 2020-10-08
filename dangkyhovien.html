@@ -6,7 +6,7 @@
 <title>ĐĂNG KÝ HỌC VIÊN</title>
 <style type="text/css">
 table{ margin: 1cm; border: thin; background-color: rgb(245, 222, 149); width: 10cm; line-height: 20px;}
-p{color:darkblue;}
+#ask{color:rgb(0, 0, 207);}
 th{text-align: left; background-color: rgb(47, 216, 216); color: darkblue;}
 </style>
 </head>
@@ -14,15 +14,14 @@ th{text-align: left; background-color: rgb(47, 216, 216); color: darkblue;}
 <form action="dangky" method="GET">
 <table>
 <tr><th colspan="2">ĐĂNG KÝ HỌC VIÊN</th></tr>
-<tr><td><label for="name">Họ và tên</td><td><input type="text" name="name" value="" width="4cm"></td></tr>
-<tr><td><label for="birth"></label> Ngày sinh</td><td><input type="text" name="birth" value="" width="2cm"></td></tr>
-<tr><td><label for="gt"></label> Giới tính </td><td><input type="radio" name="gt">Nam<input type="radio" name="gt">Nữ</td></tr>
-<tr><td><label for="dc"></label> Địa chỉ<td><input type="text" name="dc" width="4cm" height="3cm" value=""></td></tr>
-<tr><td><label for="class"></label>Lớp<tD><input list="class" name="class" id="class" value="-Chọn lớp-"></td></tr>
-<tr><td><label for="email"></label> Email<td><input type="email" name="email" value="" width="3.5cm"></td></tr>
-<tr><td><label for="sdt"></label> Điện thoại<td><input type="number" name="sdt" value="" width="3.5cm"></td></td></tr>
+<tr><td id="ask"><label for="name">Họ và tên</td><td><input type="text" name="name" value="" width="4cm"></td></tr>
+<tr><td id="ask"><label for="birth"></label> Ngày sinh</td><td><input type="text" name="birth" value="" width="2cm"></td></tr>
+<tr><td id="ask"><label for="gt"></label> Giới tính </td><td><input type="radio" name="gt">Nam<input type="radio" name="gt">Nữ</td></tr>
+<tr><td id="ask"><label for="dc"></label> Địa chỉ<td><input type="text" name="dc" width="4cm" height="3cm" value=""></td></tr>
+<tr><td id="ask"><label for="class"></label>Lớp<tD><select><option value="">--Chọn lớp--</option><option value="A1">A1</option></select></td></tr>
+<tr><td id="ask"><label for="email"></label> Email<td><input type="email" name="email" value="" width="3.5cm"></td></tr>
+<tr><td id="ask"><label for="sdt"></label> Điện thoại<td><input type="number" name="sdt" value="" width="3.5cm"></td></td></tr>
 <tr><td></td><td><input type="submit" name="dk" value="Đăng ký"><input type="reset" name="re" value="Nhập lại"></td></tr>
-<datalist id="class"><option value="A1"></option><option value="A2"></option></datalist>
 </table>
 </form>
 </body>
